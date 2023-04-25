@@ -13,7 +13,7 @@
     "dev:blog": "yarn turbo run dev --filter=blog...",
     "storybook": "turbo run start --filter=uikit...",
     "build:storybook": "turbo run build:storybook --filter=uikit...",
-    "build": "TURBO_DISABLE_CACHE=1 turbo run build --filter=web...",
+    "build": "TURBO_DISABLE_CACHE=1 turbo run build --filter=web... --exclude=./cache/webpack/server-production/0.pack",
     "build:packages": "turbo run build --filter=./packages/*",
     "start": "turbo run start --filter=web",
     "test:config": "yarn turbo run test:config --filter=[HEAD^1]",

@@ -97,7 +97,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
           <Swap.CurrencyInputHeaderSubTitle>{subtitle}</Swap.CurrencyInputHeaderSubTitle>
         </Flex>
         <Flex width="100%" justifyContent="end">
-          {isChartSupported && setIsChartDisplayed && (
+          {/* {isChartSupported && setIsChartDisplayed && (
             <ColoredIconButton
               onClick={() => {
                 if (!isChartDisplayed && isSwapHotTokenDisplay) {
@@ -114,8 +114,8 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 <ChartIcon width="24px" color="textSubtle" />
               )}
             </ColoredIconButton>
-          )}
-          <ColoredIconButton
+          )} */}
+          {/* <ColoredIconButton
             variant="text"
             scale="sm"
             onClick={() => {
@@ -140,7 +140,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 {tooltipVisible && (!isMobile || mobileTooltipShow) && tooltip}
               </>
             )}
-          </ColoredIconButton>
+          </ColoredIconButton> */}
           <NotificationDot show={expertMode || isRoutingSettingChange}>
             <GlobalSettings color="textSubtle" mr="0" mode={SettingsMode.SWAP_LIQUIDITY} />
           </NotificationDot>

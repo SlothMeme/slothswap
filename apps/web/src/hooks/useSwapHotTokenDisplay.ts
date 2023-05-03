@@ -5,7 +5,7 @@ import atomWithStorageWithErrorCatch from 'utils/atomWithStorageWithErrorCatch'
 import { SwapFeaturesContext } from 'views/Swap/SwapFeaturesContext'
 
 const isSwapHotTokenDisplay = atomWithStorageWithErrorCatch<boolean>('pcs:isHotTokensDisplay', false)
-const isSwapHotTokenDisplayETH = atomWithStorageWithErrorCatch<boolean>('pcs:isHotTokensDisplayETH', true)
+const isSwapHotTokenDisplayETH = atomWithStorageWithErrorCatch<boolean>('pcs:isHotTokensDisplayETH', false)
 const isHotTokensDisplayMobile = atom(false)
 
 export const useSwapHotTokenDisplay = () => {
